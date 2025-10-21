@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Kontrol Bimbingan S3 PBA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>SISTEM KONTROL BIMBINGAN DISERTASI S3 PBA</h1>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="openTab('rekap')"> Rekap Data</button>
+    <button class="tab-button" onclick="openTab('kontrol')"> Kontrol Bimbingan</button>
+  </div>
+
+
+  <div id="rekap" class="tab-content active">
+    <h2>Rekap Data Mahasiswa</h2>
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>NIM</th>
+          <th>Nama Mahasiswa</th>
+          <th>Tahap Ujian Terakhir</th>
+          <th>Promotor</th>
+          <th>Co-Promotor</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <button class="add-row" onclick="addRow()">+ Tambah Baris</button>
+  </div>
+
+
+  <div id="kontrol" class="tab-content">
+    <h2>Kontrol Bimbingan per Dosen</h2>
+
+    <div class="control-box">
+      <label for="dosenSelect">Pilih Nama Dosen:</label>
+      <select id="dosenSelect" onchange="filterByDosen()">
+        <option value="">-- Pilih Dosen --</option>
+      </select>
+    </div>
+
+    <table id="kontrolTable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Mahasiswa yang Dibimbing</th>
+          <th>Tahap Ujian Terakhir</th>
+        </tr>
+      </thead>
+      <tbody id="kontrolBody"></tbody>
+    </table>
+
+    <div class="note">
+      <p><strong>Catatan:</strong></p>
+      <p>• Pilih nama promotor atau co-promotor untuk melihat mahasiswa bimbingannya.</p>
+      <p>• Update data pada tab “Rekap Data Mahasiswa”.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
