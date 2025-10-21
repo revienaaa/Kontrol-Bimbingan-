@@ -1,0 +1,124 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  background-color: #007a5a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #007a5a;
+  margin-top: 10px;
+}
+
+.tabs {
+  text-align: center;
+  background-color: #e9f3ef;
+  padding: 10px 0;
+  border-bottom: 2px solid #007a5a;
+}
+
+.tab-button {
+  background-color: #cde5dc;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #007a5a;
+  color: white;
+}
+
+.tab-button:hover {
+  background-color: #009a74;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word;
+  max-width: 250px;
+}
+
+th {
+  background-color: #007a5a;
+  color: white;
+  text-align: center;
+}
+
+td {
+  background-color: #fefefe;
+}
+
+td[contenteditable="true"]:focus {
+  outline: 2px solid #009a74;
+  background-color: #e6fff3;
+}
+
+.add-row {
+  margin-top: 10px;
+  background-color: #007a5a;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-row:hover {
+  background-color: #009a74;
+}
+
+.control-box {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.note {
+  margin-top: 20px;
+  background-color: #e0f2eb;
+  padding: 15px;
+  border-left: 5px solid #007a5a;
+  font-size: 14px;
+  color: #333;
+}
